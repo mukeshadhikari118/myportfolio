@@ -20,10 +20,10 @@ function About() {
            <h1 className='font-bold text-xl mb-6 tracking-wide'>Get to know me!</h1>
             <div className='text-gray-600 tracking-wide text-[14.5px] flex flex-col space-y-3'>
                 <p>
-                I'm a <span className='font-bold'>MERN Developer</span> focused on building beautiful web applications that leads to the success of the overall product. Check out some of my work in the <span className='font-bold'>Projects</span> section.
+                I&apos;m a <span className='font-bold'>MERN Developer</span> focused on building beautiful web applications that leads to the success of the overall product. Check out some of my work in the <span className='font-bold'>Projects</span> section.
                 </p>
                 <p>I also like sharing content related to the stuff that I have learned over the years in <span className='font-bold'>Web Development </span> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to  Web Development and Programming.</p>
-                <p>I'm open to <span className='font-bold'>Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <span className='font-bold'>contact</span> me.</p>
+                <p>I&apos;m open to <span className='font-bold'>Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <span className='font-bold'>contact</span> me.</p>
             </div>
             <button className='bg-yellow-400 hover:-translate-y-1 shadow-xl tracking-wider text-sm uppercase font-bold text-gray-800 py-3 px-12 transition-all duration-500 rounded-lg my-10'>contact</button>
            </section>

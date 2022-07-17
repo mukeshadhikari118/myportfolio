@@ -5,7 +5,7 @@ function ProjectCard({title,img,desc}) {
   return (
     <main className=' px-6 md:px-20  py-4 flex flex-col md:flex-row items-center md:space-y-0  space-y-14'>
         <div className='relative h-72 md:h-[500px] w-3/4 md:w-[50%] mx-auto'>
-            <Image src={img} className='object-cover rounded-md' layout='fill'/>
+            <Image alt='' src={img} className='object-cover rounded-md' layout='fill'/>
         </div>
 
        <section className='flex items-center md:items-start flex-col space-y-5 md:space-y-10 md:w-[40%]' >

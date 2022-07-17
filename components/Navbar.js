@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
-import { Link as Link2, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link as Link2 } from 'react-scroll'
 
 function Navbar() {
   const [mobileView, setmobileView] = useState(false);
@@ -17,6 +17,7 @@ function Navbar() {
        <Link href={'/'}>
        <div className="flex items-center uppercase space-x-2 ">
           <Image
+          alt=""
             priority
             className="rounded-full cursor-pointer"
             src={"/pp.jpg"}

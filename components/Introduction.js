@@ -10,7 +10,7 @@ function Introduction() {
   return (
   
     <main id='home' className='bg-gradient-to-b from-gray-100 to-gray-200 h-[550px] md:h-[717px]  flex flex-col text-center justify-center items-center space-y-10 relative'>
-        <h1 className='font-extrabold text-3xl md:text-6xl  uppercase tracking-widest'>hey i'm sankalpa Neupane</h1>
+        <h1 className='font-extrabold text-3xl md:text-6xl  uppercase tracking-widest'>hey i&apos;m sankalpa Neupane</h1>
         <p className='font-light tracking-wider md:font-normal md:text-lg text-gray-800 px-4 md:w-1/2'> A MERN Developer focused on building beautiful web applications using various modern tools and libraries</p>
         <button className='bg-yellow-400 hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-16 transition-all duration-500 rounded-lg'>projects</button>
         <section className='absolute left-0  bg-white rounded-full shadow-sm px-3 py-4 hidden lg:flex flex-col space-y-6'>
