@@ -6,7 +6,7 @@ import { Link as Link2 } from 'react-scroll'
 
 function Navbar() {
   const [mobileView, setmobileView] = useState(false);
-  console.log(mobileView);
+
   return (
     <>
       <main
@@ -14,7 +14,7 @@ function Navbar() {
           mobileView && "border-b"
         } select-none  transition-all duration-500 bg-white shadow-md flex items-center justify-between px-4 md:px-6`}
       >
-       <Link href={'/'}>
+       <Link2 to='home' smooth={true} offset={-100}>
        <div className="flex items-center uppercase space-x-2 ">
           <Image
           alt=""
@@ -28,7 +28,7 @@ function Navbar() {
             Sankalpa Neupane
           </p>
         </div>
-       </Link>
+       </Link2>
 
         <div className="md:flex hidden font-extrabold font-mono text-sm text-gray-700 tracking-widest space-x-8 uppercase">
           <Link2 to="home" smooth={true} offset={-150} className="cursor-pointer hover:text-yellow-400 transition-all duration-300">Home</Link2>

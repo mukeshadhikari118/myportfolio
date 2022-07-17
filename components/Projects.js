@@ -19,7 +19,7 @@ function Projects() {
         <section className='space-y-20'>
 
             {projects.map((project)=>(
-                    <ProjectCard key={project.id} title={project.title} img={project.img} desc={project.desc}/>
+                    <ProjectCard key={project.id}  title={project.title} img={project.img} desc={project.desc} tools={project.tools} livelink={project.livelink}/>
             ))}
         
           

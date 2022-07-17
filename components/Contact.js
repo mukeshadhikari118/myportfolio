@@ -6,7 +6,7 @@ function Contact() {
         e.preventDefault()
     }
   return (
-    <main id='contact' className='bg-gray-200 pt-2  pb-20'>
+    <main id='contact' className=' bg-gradient-to-b to-gray-100 from-gray-200 pt-2  pb-20'>
        <PageIntro title='contact' description='Feel free to Contact me by submitting the form below and I will get back to you as soon as possible'/>
        <form onSubmit={handleSubmit} className='bg-white md:w-1/2 md:mx-auto mx-6 px-6 md:px-10 py-6 md:py-10 rounded-md shadow-xl flex flex-col space-y-5 md:space-y-8'>
             <div className='flex flex-col space-y-3'>
