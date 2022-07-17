@@ -2,8 +2,10 @@ import axios from 'axios'
 import React, { useEffect,useState } from 'react'
 import PageIntro from './PageIntro'
 import { Link as Link2 } from 'react-scroll'
+import { useSelector } from 'react-redux'
 
 function About() {
+  const mode = useSelector(state=>state.theme?.theme)
     const [skills, setSkills] = useState([])
     useEffect(() => {
       const getSkills = async() => {
@@ -14,12 +16,13 @@ function About() {
     }, [])
     
   return (
-    <div id='about' className=''>
+    <div id='about' >
+       
         <PageIntro title="About me" description='Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology'/>
         <main className='h-auto md:max-w-6xl mx-auto md:flex   md:space-x-10 py-4  px-5'>
            <section className='md:w-1/2  md:p-2'>
            <h1 className='font-bold text-xl mb-6 tracking-wide'>Get to know me!</h1>
-            <div className='text-gray-600 tracking-wide text-[14.5px] flex flex-col space-y-3'>
+            <div className={` ${mode?"text-white":"text-gray-600"} tracking-wide text-[14.5px] flex flex-col space-y-3`}>
                 <p>
                 I&apos;m a <span className='font-bold'>MERN Developer</span> focused on building beautiful web applications that leads to the success of the overall product. Check out some of my work in the <span className='font-bold'>Projects</span> section.
                 </p>
@@ -31,9 +34,9 @@ function About() {
 
            <section className='md:w-1/2  px-2 py-2'>
            <h1 className='font-bold text-xl mt-10 md:mt-0 mb-6  tracking-wide'>My Skills</h1>
-                <div className='text-sm text-gray-700 font-semibold flex space-x-4 flex-wrap'>
+                <div className='text-sm  font-semibold flex space-x-4 flex-wrap'>
                     {skills.map((skill) => (
-                         <div key={skill.id} className='bg-gray-200 my-2  p-3  max-w-fit rounded-md '>
+                         <div key={skill.id} className={` ${mode?"bg-gray-800 text-white":"bg-gray-200 text-gray-700"} my-2  p-3  max-w-fit rounded-md`}>
                         {skill.title}
                      </div>
                     ))}
