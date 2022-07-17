@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Link from "next/link";
 import { Link as Link2 } from 'react-scroll'
 
 function Navbar() {
@@ -20,7 +19,7 @@ function Navbar() {
           alt=""
             priority
             className="rounded-full cursor-pointer"
-            src={"/pp.jpg"}
+            src={"/pp2.png"}
             height="45"
             width="45"
           />
