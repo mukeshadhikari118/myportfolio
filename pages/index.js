@@ -26,6 +26,7 @@ export default function Home() {
     <Projects/>
     <Contact/>
     <Footer/>
+    <script src="//code.tidio.co/dvp9qw1ryzdx86e6ytqmus8xexakp8ak.js" async></script>
    </div>
   )
 }
