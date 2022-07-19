@@ -64,8 +64,7 @@ function Footer() {
             Sankalpa neupane
           </h1>
           <p className="text-[13px]  md:w-[65%]">
-            A MERN Developer focused on building beautiful web applications
-            using various modern tools and libraries
+          A software engineer with experience in MERN stack, ruby, python and many more
           </p>
         </div>
       </main>

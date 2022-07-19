@@ -23,8 +23,7 @@ function Introduction() {
       </h1>
       <p className="font-light tracking-wider md:font-normal md:text-lg  px-4 md:w-1/2">
         {" "}
-        A MERN Developer focused on building beautiful web applications using
-        various modern tools and libraries
+        A software engineer with experience in MERN stack, ruby, python and many more
       </p>
       <Link2 to="projects" smooth={true} offset={-120}>
         <button className="bg-yellow-400 hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-16 transition-all duration-500 rounded-lg">

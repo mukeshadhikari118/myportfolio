@@ -40,7 +40,7 @@ function ProjectCard({ title, img, desc, tools, livelink }) {
         </p>
 
         <section className="w-full">
-          <h1 className="font-bold text-xl mb-3  tracking-wide">Tools used</h1>
+          <h1 className="font-bold text-xl mb-3  tracking-wide">Tech Stack</h1>
           <div className="text-sm  w-full font-semibold flex space-x-4 flex-wrap">
             {tools.map((tool) => (
               <div
