@@ -20,7 +20,7 @@ export default function Home() {
         <title>Sankalpa Neupane</title>
       </Head>
       <Navbar />
-      <Introduction />
+      <Introduction/>
       <About />
       <Projects />
       <Contact />

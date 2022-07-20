@@ -17,7 +17,7 @@ function Projects() {
     <div id="projects">
       <PageIntro
         title="projects"
-        description="Here you will find some of the personal and clients projects that I created with each project containing its own case study"
+        description="Here you will find some of the personal projects that I created with each project containing all of the tech stacks used"
       />
       <section className="space-y-20">
         {projects.map((project) => (
