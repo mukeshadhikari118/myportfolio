@@ -41,7 +41,7 @@ function About() {
               I also like helping others with the stuff that I have
               learned over the years in{" "}
               <span className="font-bold">Web Development </span> and I am a <span className="font-bold">Problem solver </span>. Feel free to Connect or Follow
-              me on my Linkedin where I post useful content related to Web
+              me on my LinkedIn where I post useful content related to Web
               Development and Programming.
             </p>
             <p>
