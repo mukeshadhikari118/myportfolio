@@ -1,12 +1,27 @@
-import React from "react";
+import axios from "axios";
+import React, {useState} from "react";
+import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
 import PageIntro from "./PageIntro";
 
 function Contact() {
   const mode = useSelector((state) => state.theme?.theme);
-  const handleSubmit = (e) => {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    try {
+     await axios.post('/api/message', {name,email,message})
+     toast.success("Message sent")
+     setEmail("")
+     setMessage("")
+     setName("")
+    } catch (error) {
+      toast.error("Error sending message", {id:"error"})
+    }
   };
+
   return (
     <main
       id="contact"
@@ -34,6 +49,8 @@ function Contact() {
             Name
           </label>
           <input
+          value={name}
+          onChange={e=>setName(e.target.value)}
             className={` ${
               mode ? "bg-gray-800 border-none" : "bg-gray-100"
             } border py-4 px-3 outline-none text-sm rounded-md`}
@@ -51,6 +68,8 @@ function Contact() {
             Email
           </label>
           <input
+          value={email}
+          onChange={e=>setEmail(e.target.value)}
             className={` ${
               mode ? "bg-gray-800 border-none" : "bg-gray-100"
             } border py-4 px-3 outline-none text-sm rounded-md`}
@@ -68,6 +87,8 @@ function Contact() {
             Message
           </label>
           <textarea
+          value={message}
+          onChange={e=>setMessage(e.target.value)}
             className={` ${
               mode ? "bg-gray-800 border-none" : "bg-gray-100"
             } border py-4 px-3 outline-none text-sm rounded-md resize-none`}
