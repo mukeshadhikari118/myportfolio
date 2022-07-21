@@ -11,9 +11,16 @@ function Contact() {
   const [message, setMessage] = useState("")
   const handleSubmit = async(e) => {
     e.preventDefault();
+    if(name==="" || email==="" || message === ""){
+      return toast.error("Enter all the fields")
+    }
+    if(name.length<3){
+      return toast.error("Name too short")
+    }
     try {
+    const toastId = toast.loading("message sending..") 
      await axios.post('/api/message', {name,email,message})
-     toast.success("Message sent")
+     toast.success("Message sent", {id: toastId})
      setEmail("")
      setMessage("")
      setName("")
