@@ -12,10 +12,10 @@ function Contact() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     if(name==="" || email==="" || message === ""){
-      return toast.error("Enter all the fields")
+      return toast.error("Enter all the fields", {id:"blank"})
     }
     if(name.length<3){
-      return toast.error("Name too short")
+      return toast.error("Name too short", {id: "short"})
     }
     try {
     const toastId = toast.loading("message sending..") 
