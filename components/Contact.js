@@ -34,7 +34,7 @@ function Contact() {
       id="contact"
       className={`bg-gradient-to-b ${
         mode ? "to-gray-900 from-gray-800" : "to-gray-100 from-gray-200"
-      } pt-2  pb-20`}
+      } pt-2  pb-20 selection:bg-yellow-400`}
     >
       <PageIntro
         title="contact"

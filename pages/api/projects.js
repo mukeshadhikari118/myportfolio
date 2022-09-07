@@ -5,7 +5,7 @@ export default function handler(req, res) {
             title:"Dokan",
             img:'/dokan3.png',
             desc:"Dokan is an ecommerce website of clothes where a user can view, compare and buy clothes easily.",
-            tools: ["MongoDB", "Express JS", "Node JS", "React", "Tailwind CSS", "redux", "stripe"],
+            tools: ["MongoDB", "Express JS", "Node JS", "React", "Tailwind CSS", "redux","JWT", "stripe"],
             livelink: ""
 
         },

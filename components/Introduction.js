@@ -18,15 +18,15 @@ function Introduction() {
           : "from-gray-100 text-gray-800 to-gray-200"
       }  h-[550px] md:h-[802px]  flex flex-col text-center justify-center items-center space-y-10 relative transition-all duration-300`}
     >
-      <h1 className="font-extrabold text-3xl md:text-6xl  uppercase tracking-widest">
+      <h1 className="font-extrabold selection:bg-yellow-400 text-3xl md:text-6xl  uppercase tracking-widest">
         hey i&apos;m sankalpa Neupane
       </h1>
-      <p className="font-light tracking-wider md:font-normal md:text-lg  px-4 md:w-1/2">
+      <p className="font-light selection:bg-yellow-400 tracking-wider md:font-normal md:text-lg  px-4 md:w-1/2">
         {" "}
         A software engineer with experience in MERN stack, ruby, python and many more
       </p>
       <Link2 to="projects" smooth={true} offset={-120}>
-        <button className="bg-yellow-400 hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-16 transition-all duration-500 rounded-lg">
+        <button className="bg-yellow-400 select-none hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-16 transition-all duration-500 rounded-lg">
           projects
         </button>
       </Link2>

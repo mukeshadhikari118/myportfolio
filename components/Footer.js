@@ -1,9 +1,5 @@
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin,FaFacebook,FaYoutube,FaInstagram,FaGithub   } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
 function Footer() {
@@ -16,7 +12,7 @@ function Footer() {
     >
       <main className="space-y-10 md:flex flex-row-reverse  items-center justify-between md:px-16 ">
         <div className="space-y-4">
-          <h1 className="uppercase font-extrabold tracking-[1px] text-lg">
+          <h1 className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
             social
           </h1>
           <div className="flex items-center space-x-3 ">
@@ -60,20 +56,20 @@ function Footer() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="uppercase font-extrabold tracking-[1px] text-lg">
+          <h1 className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
             Sankalpa neupane
           </h1>
-          <p className="text-[13px]  md:w-[65%]">
+          <p className="text-[13px]  md:w-[65%] selection:bg-yellow-400">
           A software engineer with experience in MERN stack, ruby, python and many more
           </p>
-          <a href='/resume.pdf' download><button className="bg-yellow-400 text-[10px] hover:-translate-y-1 shadow-xl tracking-wider uppercase font-extrabold text-gray-800 py-3 mt-5 px-10 transition-all duration-500 rounded-lg">
+          <a href='/resume.pdf' download><button className="bg-yellow-400  select-none text-[10px] hover:-translate-y-1 shadow-xl tracking-wider uppercase font-extrabold text-gray-800 py-3 mt-5 px-10 transition-all duration-500 rounded-lg">
          Download cv
         </button></a>
         </div>
       </main>
       <hr />
       <div>
-        <p className="text-[10px]  text-center pt-3">
+        <p className="text-[10px]  selection:bg-yellow-400 text-center pt-3">
           &copy; Copyright 2022. Made by Sankalpa Neupane
         </p>
       </div>

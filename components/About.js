@@ -23,7 +23,7 @@ function About() {
       />
       <main className="h-auto md:max-w-6xl mx-auto md:flex   md:space-x-10 py-4  px-5">
         <section className="md:w-1/2  md:p-2">
-          <h1 className="font-bold text-xl mb-6 tracking-wide">
+          <h1 className="font-bold text-xl mb-6 tracking-wide selection:bg-yellow-400 selection:text-black">
             Get to know me!
           </h1>
           <div
@@ -31,20 +31,19 @@ function About() {
               mode ? "text-white" : "text-gray-600"
             } tracking-wide text-[14.5px] flex flex-col space-y-3`}
           >
-            <p>
+            <p className="selection:bg-yellow-400 ">
               I&apos;m a <span className="font-bold">MERN Developer</span>{" "}
               focused on building beautiful web applications that leads to the
               success of the overall product. Check out some of my work in the{" "}
-              <span className="font-bold">Projects</span> section.
+              <Link2 to="projects" smooth={true}  offset={-120}  className="font-bold cursor-pointer hover:text-yellow-400">Projects</Link2> section.
             </p>
-            <p>
+            <p className="selection:bg-yellow-400 ">  
               I also like helping others with the stuff that I have
               learned over the years in{" "}
-              <span className="font-bold">Web Development </span> and I am a <span className="font-bold">Problem solver </span>. Feel free to Connect or Follow
-              me on my LinkedIn where I post useful content related to Web
-              Development and Programming.
+              <span className="font-bold">Web Development </span> and I am a <span className="font-bold">Problem solver</span>. Feel free to Connect or Follow
+              me on my LinkedIn.
             </p>
-            <p>
+            <p className="selection:bg-yellow-400 ">
               I&apos;m open to <span className="font-bold">Job</span>{" "}
               opportunities where I can contribute, learn and grow. If you have
               a good opportunity that matches my skills and experience then
@@ -54,14 +53,14 @@ function About() {
           </div>
           <Link2 to="contact" smooth={true} offset={-20}>
             {" "}
-            <button className="bg-yellow-400 hover:-translate-y-1 shadow-xl tracking-wider text-sm uppercase font-bold text-gray-800 py-3 px-12 transition-all duration-500 rounded-lg my-10">
+            <button className=" select-none bg-yellow-400 hover:-translate-y-1 shadow-xl tracking-wider text-sm uppercase font-bold text-gray-800 py-3 px-12 transition-all duration-500 rounded-lg my-10">
               contact
             </button>
           </Link2>
         </section>
 
         <section className="md:w-1/2  px-2 py-2">
-          <h1 className="font-bold text-xl mt-10 md:mt-0 mb-6  tracking-wide">
+          <h1 className="font-bold text-xl selection:bg-yellow-400 mt-10 md:mt-0 mb-6  tracking-wide">
             My Skills
           </h1>
           <div className="text-sm  font-semibold flex space-x-4 flex-wrap">
@@ -70,7 +69,7 @@ function About() {
                 key={skill.id}
                 className={` ${
                   mode ? "bg-gray-800 text-white" : "bg-gray-200 text-gray-700"
-                } my-2  p-3  max-w-fit rounded-md`}
+                } my-2  p-3  max-w-fit rounded-md selection:bg-yellow-400`}
               >
                 {skill.title}
               </div>
