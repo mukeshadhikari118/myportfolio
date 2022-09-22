@@ -15,13 +15,14 @@ export default function Home() {
   const mode = useSelector((state) => state.theme?.theme);
 
   return (
-    <div className={`${mode ? "bg-gray-900 text-white" : "bg-white"}`}>
+    <div className={`${mode ? "bg-gray-900 text-white" : "bg-white"} snap-y`}>
       <Head>
         <title>Sankalpa Neupane</title>
       </Head>
       <Navbar />
-      <Introduction/>
-      <About />
+     
+      <Introduction />
+     <About/>
       <Projects />
       <Contact />
       <Footer />

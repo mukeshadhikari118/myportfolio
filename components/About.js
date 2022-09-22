@@ -61,19 +61,27 @@ function About() {
 
         <section className="md:w-1/2  px-2 py-2">
           <h1 className="font-bold text-xl selection:bg-yellow-400 mt-10 md:mt-0 mb-6  tracking-wide">
-            My Skills
+            My Skills <span className="text-sm font-light pb-1">(hover over to see proficiency)</span>
           </h1>
           <div className="text-sm  font-semibold flex space-x-4 flex-wrap">
             {skills.map((skill) => (
               <div
                 key={skill.id}
                 className={` ${
-                  mode ? "bg-gray-800 text-white" : "bg-gray-200 text-gray-700"
-                } my-2  p-3  max-w-fit rounded-md selection:bg-yellow-400`}
+                  mode ? "bg-gray-800 text-white " : "bg-gray-200  text-gray-700"
+                } my-2 h-14  w-28 text-center rounded-full text-sm flex items-center justify-center  selection:bg-yellow-400 cursor-pointer relative group transition-all duration-300 ease-in-out   `}
               >
-                {skill.title}
+                <p className="group-hover:opacity-0">{skill.title}</p>
+
+                <div className="absolute top-[17px]">
+                  <p className="text-yellow-600 opacity-0 group-hover:opacity-80 font-bold">{skill.percent}%</p>
+                </div>
               </div>
+              
             ))}
+            <div>
+            
+            </div>
           </div>
         </section>
       </main>
