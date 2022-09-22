@@ -6,7 +6,6 @@ import { Link as Link2 } from "react-scroll";
 import Switch from "react-switch";
 import { useDispatch, useSelector } from "react-redux";
 import { changeTheme } from "../redux/themeSlice";
-import {motion} from 'framer-motion'
 
 function Navbar() {
   const dispatch = useDispatch();
@@ -27,13 +26,7 @@ function Navbar() {
         } shadow-md flex items-center justify-between px-4 md:px-6`}
       >
         <Link2 to="home" smooth={true} offset={-100}>
-          <motion.div initial={{
-            x: -500
-          }} animate={{
-            x:0
-          }} transition={{
-            duration: 1
-          }}
+          <div
             onClick={() => setmobileView(false)}
             className="flex items-center uppercase space-x-2 "
           >
@@ -48,16 +41,10 @@ function Navbar() {
             <p className="font-extrabold  tracking-widest cursor-pointer hover:text-yellow-400 transition-all duration-300  font-mono">
               Sankalpa Neupane
             </p>
-          </motion.div >
+          </div>
         </Link2>
 
-        <motion.div initial={{
-            x: 500
-          }} animate={{
-            x:0
-          }} transition={{
-            duration: 1
-          }} className="md:flex items-center hidden font-extrabold font-mono text-sm  tracking-widest space-x-8 uppercase">
+        <div className="md:flex items-center hidden font-extrabold font-mono text-sm  tracking-widest space-x-8 uppercase">
           <Link2
             to="home"
             smooth={true}
@@ -103,7 +90,7 @@ function Navbar() {
             onChange={handleChange}
             checked={checked}
           />
-        </motion.div>
+        </div>
         {!mobileView ? (
           <MenuIcon
             onClick={() => setmobileView(true)}
