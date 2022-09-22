@@ -6,9 +6,17 @@ import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { Link as Link2 } from "react-scroll";
+import { useTypewriter, Cursor} from 'react-simple-typewriter'
 
 function Introduction() {
   const mode = useSelector((state) => state.theme?.theme);
+  const [text] = useTypewriter({
+    words: [" hey! I'm Sankalpa ", 'a web developer', 'a react developer'],
+    loop: false,
+    delaySpeed: 2000,
+    typeSpeed: 100
+    
+  })
   return (
     <main
       id="home"
@@ -19,11 +27,11 @@ function Introduction() {
       }  h-[550px] md:h-[802px]  flex flex-col text-center justify-center items-center space-y-10 relative transition-all duration-300`}
     >
       <h1 className="font-extrabold selection:bg-yellow-400 text-3xl md:text-6xl  uppercase tracking-widest">
-        hey i&apos;m sankalpa Neupane
+       {text} <Cursor />
       </h1>
-      <p className="font-light selection:bg-yellow-400 tracking-wider md:font-normal md:text-lg  px-4 md:w-1/2">
+      <p className="font-light text-gray-600 text-sm selection:bg-yellow-400 tracking-wider md:font-normal md:text-lg  px-4 md:w-1/2">
         {" "}
-        A software engineer with experience in MERN stack, ruby, python and many more
+        I just love to make beautiful web applications using modern tools and technologies
       </p>
       <Link2 to="projects" smooth={true} offset={-120}>
         <button className="bg-yellow-400 select-none hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-16 transition-all duration-500 rounded-lg">
