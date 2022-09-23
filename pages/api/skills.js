@@ -37,16 +37,21 @@ export default function handler(req, res) {
       },
       {
         id: 8,
+        title: "React Native",
+        percent: 40
+      },
+      {
+        id: 9,
         title: "MongoDB",
         percent: 50
       },
       {
-        id: 9,
+        id: 10,
         title: "Python",
         percent: 50
       },
       {
-        id: 10,
+        id: 11,
         title: "Ruby",
         percent: 50
       },

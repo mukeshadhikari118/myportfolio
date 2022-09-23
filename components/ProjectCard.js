@@ -3,8 +3,9 @@ import { useRouter } from "next/router";
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
+import {motion} from 'framer-motion'
 
-function ProjectCard({ title, img, desc, tools, livelink }) {
+function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
   const mode = useSelector((state) => state.theme?.theme);
   const router = useRouter();
   const handleClick = (link) => {
@@ -18,19 +19,27 @@ function ProjectCard({ title, img, desc, tools, livelink }) {
   };
 
   return (
-    <main className=" px-6 md:px-20  py-4 flex flex-col md:flex-row items-center md:space-y-0  space-y-14">
+    <main className="  snap-center  py-4 flex flex-col md:flex-row items-center md:space-y-0 z-40  space-y-14 w-full shrink-0 relative px-6 md:px-0  ">
       <Toaster position="bottom-left" />
-      <div className="relative h-72 md:h-[500px] w-3/4 md:w-[50%] mx-auto">
+      <motion.div initial={{
+        opacity:0,
+        y:-200
+      }} whileInView={{
+        opacity:1,
+        y: 0
+      }} transition={{
+        duration: 1.2
+      }} className="relative h-72 md:h-[500px] w-3/4 md:w-[50%] mx-auto z-40">
         <Image
           alt=""
           src={img}
           className="object-cover select-none rounded-md"
           layout="fill"
         />
-      </div>
+      </motion.div>
 
-      <section className="flex items-center md:items-start flex-col space-y-5 md:space-y-10 md:w-[40%]">
-        <h1 className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400">{title}</h1>
+      <section className="flex items-center md:items-start flex-col z-40 space-y-5 md:space-y-10 md:w-[40%]">
+        <h1 className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400"><span className="text-base text-gray-400 no-underline">{index+1} of {length}. </span>{title}</h1>
         <p
           className={`text-sm text-gray-500 ${
             mode ? "text-gray-200" : "text-gray-500"
@@ -61,6 +70,7 @@ function ProjectCard({ title, img, desc, tools, livelink }) {
           live link
         </button>
       </section>
+      {/* <div className={`h-64 pr-20 w-full bg-pink-400/10 absolute  z-10 ${index%2===0?"-skew-y-12":"skew-y-12"}  overflow-hidden`}></div> */}
     </main>
   );
 }

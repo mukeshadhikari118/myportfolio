@@ -19,8 +19,8 @@ function Projects() {
         title="projects"
         description="Here you will find some of the personal projects that I created with each project containing all of the tech stacks used"
       />
-      <section className="space-y-20">
-        {projects.map((project) => (
+      <section className="flex items-center overflow-scroll snap-x snap-mandatory relative scrollbar-hide ">
+        {projects.map((project,index) => (
           <ProjectCard
             key={project.id}
             title={project.title}
@@ -28,9 +28,15 @@ function Projects() {
             desc={project.desc}
             tools={project.tools}
             livelink={project.livelink}
+            index={index}
+            length={projects.length}
           />
         ))}
+
+
+     
       </section>
+      
     </div>
   );
 }
