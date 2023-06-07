@@ -9,6 +9,7 @@ import axios from "axios";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
+import Experience from "../components/Experience";
 import { useSelector } from "react-redux";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Introduction />
      <About/>
       <Projects />
+        <Experience/>
       <Contact />
       <Footer />
       <script
