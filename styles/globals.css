@@ -15,6 +15,11 @@ a {
   box-sizing: border-box;
 }
 
+.vertical-timeline-element-content{
+  padding: 0 !important;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
