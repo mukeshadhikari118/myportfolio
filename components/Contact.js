@@ -1,43 +1,46 @@
 import axios from "axios";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
 import PageIntro from "./PageIntro";
+import * as emailJs from "@emailjs/browser";
 
 function Contact() {
   const mode = useSelector((state) => state.theme?.theme);
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
-  const [loading, setLoading] = useState(false)
 
-  const startLoading = () => {
-    setLoading(true)
-  }
-  const stopLoading = () => {
-    setLoading(false)
-  }
+    useEffect(()=>{
+       emailJs.init(process.env.NEXT_PUBLIC_EMAILJS_KEY)
+    },[])
   const handleSubmit = async(e) => {
     const toastId = "toastId"
     toast.loading("Please wait...", {id: toastId})
-    startLoading()
     e.preventDefault();
     if(name==="" || email==="" || message === ""){
-      return toast.error("Enter all the fields", {id:"blank"})
+      return toast.error("Enter all the fields", {id:toastId})
     }
     if(name.length<3){
-      return toast.error("Name too short", {id: "short"})
+      return toast.error("Name too short", {id: toastId})
     }
     try {
-      await axios.post('/api/message', {name,email,message})
-      toast.success("Message sent", {id: toastId})
-      setEmail("")
-      setMessage("")
-      setName("")
-      stopLoading()
+      await axios.post('/api/message', {name,email,message}).then((res)=>{
+          emailJs.send(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            {
+              from_name: name,
+              from_email: email,
+              message: message
+            }
+        )
+      }).then((res)=>{
+          toast.success("Message sent", {id: toastId})
+          setEmail("")
+          setMessage("")
+          setName("")
+      })
     } catch (error) {
       toast.error("Error sending message", {id:toastId})
-      stopLoading()
     }
   };
 
