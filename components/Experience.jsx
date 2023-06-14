@@ -8,7 +8,7 @@ import {useSelector} from "react-redux";
 function Experience(props) {
     const mode = useSelector((state) => state.theme?.theme);
     return (
-        <div>
+        <div id='experience'>
             <PageIntro
                 title="experience"
                 description="This section highlights my professional work history, including previous job positions or internship works that I have undertaken"
@@ -28,7 +28,7 @@ function Experience(props) {
                        <p className={`${mode ? "text-white":"text-black"} font-light`}>Frontend Developer</p>
                        <h4 className="vertical-timeline-element-subtitle text-red-500 font-bold">Hamro Patro Inc.</h4>
                        <p className={` ${mode ? "text-white":"text-gray-900"} text-sm`}>
-                           <span className='font-bold uppercase text-base underline mr-3'> Tech stack : </span>  Svelte, Tailwind CSS, TypeScript, gRPC
+                           <span className='font-bold uppercase text-base mr-3'> Tech stack : </span>  Svelte, Tailwind CSS, TypeScript, gRPC
                        </p>
                        <p className={`${mode? "text-white":"text-gray-500"} text-sm`}>During this 3 months I was involved with the frontend team to make smooth user interface in Hamro Pay, a new payment wallet system in Nepal.</p>
                    </div>
@@ -47,7 +47,7 @@ function Experience(props) {
                         <p className={`${mode ? "text-white":"text-black"} font-light`}>Frontend Developer</p>
                         <h4 className="vertical-timeline-element-subtitle text-red-500 font-bold">Hamro Patro Inc.</h4>
                         <p className={` ${mode ? "text-white":"text-gray-900"} text-sm`}>
-                            <span className='font-bold uppercase text-base underline mr-3'>Tech stack : </span> Svelte, Tailwind CSS, TypeScript, gRPC, React.js, Ant Design, Apex charts
+                            <span className='font-bold uppercase text-base mr-3'>Tech stack : </span> Svelte, Tailwind CSS, TypeScript, gRPC, React.js, Ant Design, Apex charts
                         </p>
                         <p  className= {`${mode? "text-white":"text-gray-500"} text-sm`}>Currently I am continuing in Hamro Patro fintech team where I am responsible in the frontend works in Hamro Pay.</p>
                     </div>

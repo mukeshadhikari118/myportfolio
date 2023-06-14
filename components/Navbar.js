@@ -69,6 +69,14 @@ function Navbar() {
           >
             Projects
           </Link2>
+            <Link2
+                to="experience"
+                smooth={true}
+                offset={-120}
+                className="cursor-pointer hover:text-yellow-400 transition-all duration-300"
+            >
+                Experience
+            </Link2>
           <Link2
             to="contact"
             smooth={true}
@@ -136,7 +144,18 @@ function Navbar() {
               offset={-110}
               className="nav_links"
             >
+
               Projects
+            </Link2>
+            <Link2
+                onClick={() => setmobileView(false)}
+                to="experience"
+                smooth={true}
+                offset={-110}
+                className="nav_links"
+            >
+
+              Experience
             </Link2>
             <Link2
               onClick={() => setmobileView(false)}
