@@ -30,6 +30,11 @@ export default function handler(req, res) {
         title: "Tailwind CSS",
         percent: 80
       },
+    {
+      id: 12,
+      title: "Svelte",
+      percent: 80
+    },
       {
         id: 7,
         title: "Node JS",

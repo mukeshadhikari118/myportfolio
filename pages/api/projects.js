@@ -4,7 +4,12 @@ export default function handler(req, res) {
             id:1,
             title:"Dokan",
             img:'/dokan3.png',
-            desc:"Dokan is an ecommerce website of clothes where a user can view, compare and buy clothes easily.",
+            desc:"Dokan is an all-inclusive ecommerce hub for clothing, featuring diverse categories for men, women, and sports apparel. With an intuitive interface, users effortlessly browse, compare, and purchase items. The platform ensures secure transactions via Stripe, offering a seamless shopping experience.\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "\n" +
+                "\n",
             tools: ["MongoDB", "Express JS", "Node JS", "React", "Tailwind CSS", "redux","JWT", "stripe"],
             livelink: ""
 
@@ -13,7 +18,7 @@ export default function handler(req, res) {
             id:2,
             title:"Next School",
             img:'/school.png',
-            desc:"It is a school website which shows all the details of a school. User can view news, school photos and register new student.",
+            desc:"The school website provides essential school details, news, photos, and student registration. Recently, it introduced a blog section for students to create and share blogs, encouraging interactive learning and sharing experiences.",
             tools: ["MongoDB", "Next JS", "Tailwind CSS", "NextAuth"],
             livelink: "https://sankalpa-school.vercel.app/"
         },

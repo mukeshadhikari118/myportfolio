@@ -19,24 +19,20 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
   };
 
   return (
-      <main className="  snap-center  py-4 flex flex-col md:flex-row items-center md:space-y-0 z-40  space-y-14 w-full shrink-0 relative px-6 md:px-0  ">
+      <main className="  snap-center  flex flex-col md:flex-row items-center md:space-y-0 z-40 space-y-8 w-[87%] shrink-0 relative px-6 md:px-0  ">
         <Toaster position="bottom-left" />
-        <motion.div initial={{
-          opacity:0,
-          y:-200
-        }} whileInView={{
-          opacity:1,
-          y: 0
-        }} transition={{
-          duration: 1.2
-        }} className="relative h-72 md:h-[500px] w-3/4 md:w-[50%] mx-auto z-40">
+        <div  className="relative h-60 md:h-[500px] w-full md:w-[50%] mx-auto z-40">
+            <div className='absolute flex items-center justify-center inset-0 h-full w-full'>
+                <p className='text-xs text-gray-400'>Image Loading...</p>
+            </div>
           <Image
+              loading="lazy"
               alt=""
               src={img}
-              className="object-cover select-none rounded-md"
+              className="object-contain select-none rounded-md"
               layout="fill"
           />
-        </motion.div>
+        </div>
 
         <section className="flex items-center md:items-start flex-col z-40 space-y-5 md:space-y-10 md:w-[40%]">
           <h1 className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400"><span className="text-base text-gray-400 no-underline">{index+1} of {length}. </span>{title}</h1>
@@ -56,7 +52,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
                       key={tool}
                       className={` ${
                           mode ? "bg-gray-800 text-white" : "bg-gray-200 text-gray-700"
-                      } flex items-center justify-center md:px-3 px-8 py-2 rounded-md selection:bg-yellow-400`}
+                      } flex items-center justify-center md:px-3 px-8 py-2 rounded-md selection:bg-yellow-400 whitespace-nowrap`}
                   >
                     {tool}
                   </div>

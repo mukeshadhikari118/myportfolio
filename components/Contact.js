@@ -18,14 +18,15 @@ function Contact() {
     const toastId = "toastId"
     toast.loading("Please wait...", {id: toastId})
     e.preventDefault();
-    if(name==="" || email==="" || message === ""){
+    if(name === "" || email === "" || message === ""){
       return toast.error("Enter all the fields", {id:toastId})
     }
-    if(name.length<3){
-      return toast.error("Name too short", {id: toastId})
+    if(name.length < 3){
+      return toast.error("Enter a valid name", {id: toastId})
     }
     try {
       await axios.post('/api/message', {name,email,message}).then((res)=>{
+          console.log("mongo db all good")
           emailJs.send(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID,
             {
               from_name: name,

@@ -32,7 +32,7 @@ function About() {
                 } tracking-wide text-[14.5px] flex flex-col space-y-3`}
             >
               <p className="selection:bg-yellow-400 ">
-                I&apos;m a <span className="font-bold">MERN Developer</span>{" "}
+                I&apos;m a <span className="font-bold">Software Engineer</span>{" "}
                 focused on building beautiful web applications that leads to the
                 success of the overall product. Check out some of my work in the{" "}
                 <Link2 to="projects" smooth={true}  offset={-120}  className="font-bold cursor-pointer hover:text-yellow-400">Projects</Link2> section.
@@ -40,7 +40,7 @@ function About() {
               <p className="selection:bg-yellow-400 ">
                 I also like helping others with the stuff that I have
                 learned over the years in{" "}
-                <span className="font-bold">Web Development </span> and I am a <span className="font-bold">Problem solver</span>. Feel free to Connect or Follow
+                <span className="font-bold">Software Engineering </span> and I am a <span className="font-bold">Problem solver</span>. Feel free to Connect or Follow
                 me on my LinkedIn.
               </p>
               <p className="selection:bg-yellow-400 ">

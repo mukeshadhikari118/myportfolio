@@ -1,7 +1,7 @@
 import dbConnect from "../../middlewares/dbConnect";
 import Message from '../../models/Message'
 
-const handler =  async(req, res) => {
+const handler = async(req, res) => {
     await dbConnect();
 
     if (req.method === 'POST') {

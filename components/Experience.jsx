@@ -24,13 +24,13 @@ function Experience(props) {
                     }
                 >
                    <div className={`${mode ? "bg-gray-800":"bg-white"} text-white p-4`}>
-                       <h3 className={`${mode ? "text-white":"text-black"} vertical-timeline-element-title font-bold`}>Internship</h3>
+                       <h3 className={`${mode ? "text-white":"text-black"} vertical-timeline-element-title font-bold`}>Software Engineering Intern</h3>
                        <p className={`${mode ? "text-white":"text-black"} font-light`}>Frontend Developer</p>
                        <h4 className="vertical-timeline-element-subtitle text-red-500 font-bold">Hamro Patro Inc.</h4>
                        <p className={` ${mode ? "text-white":"text-gray-900"} text-sm`}>
                            <span className='font-bold uppercase text-base mr-3'> Tech stack : </span>  Svelte, Tailwind CSS, TypeScript, gRPC
                        </p>
-                       <p className={`${mode? "text-white":"text-gray-500"} text-sm`}>During this 3 months I was involved with the frontend team to make smooth user interface in Hamro Pay, a new payment wallet system in Nepal.</p>
+                       <p className={`${mode? "text-white":"text-gray-500"} text-sm`}>During this 3 months I was involved with the frontend team to make smooth user interface in Hamro Pay, a new payment wallet system in Nepal. I gained hands-on experience in svelte, GRPC Web and Typescript. </p>
                    </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -49,7 +49,9 @@ function Experience(props) {
                         <p className={` ${mode ? "text-white":"text-gray-900"} text-sm`}>
                             <span className='font-bold uppercase text-base mr-3'>Tech stack : </span> Svelte, Tailwind CSS, TypeScript, gRPC, React.js, Ant Design, Apex charts
                         </p>
-                        <p  className= {`${mode? "text-white":"text-gray-500"} text-sm`}>Currently I am continuing in Hamro Patro fintech team where I am responsible in the frontend works in Hamro Pay.</p>
+                        <p  className= {`${mode? "text-white":"text-gray-500"} text-sm`}>I enhanced and diversified Hamro Pay's wallet features, integrating utility and bank services, and overseeing the Hamro Pay Admin frontend. I streamlined KYC verification, developed key functionalities for Hamro Pay Merchant, and maintained a static website for marketing initiatives. Collaborating with the fintech team, I optimized code, created reusable components, and mentored interns to help them excel in their roles.
+
+                        </p>
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
