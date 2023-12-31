@@ -49,7 +49,7 @@ function Experience(props) {
                         <p className={` ${mode ? "text-white":"text-gray-900"} text-sm`}>
                             <span className='font-bold uppercase text-base mr-3'>Tech stack : </span> Svelte, Tailwind CSS, TypeScript, gRPC, React.js, Ant Design, Apex charts
                         </p>
-                        <p  className= {`${mode? "text-white":"text-gray-500"} text-sm`}>I enhanced and diversified Hamro Pay's wallet features, integrating utility and bank services, and overseeing the Hamro Pay Admin frontend. I streamlined KYC verification, developed key functionalities for Hamro Pay Merchant, and maintained a static website for marketing initiatives. Collaborating with the fintech team, I optimized code, created reusable components, and mentored interns to help them excel in their roles.
+                        <p  className= {`${mode? "text-white":"text-gray-500"} text-sm`}>I enhanced and diversified Hamro Pay&apos;s wallet features, integrating utility and bank services, and overseeing the Hamro Pay Admin frontend. I streamlined KYC verification, developed key functionalities for Hamro Pay Merchant, and maintained a static website for marketing initiatives. Collaborating with the fintech team, I optimized code, created reusable components, and mentored interns to help them excel in their roles.
 
                         </p>
                     </div>
