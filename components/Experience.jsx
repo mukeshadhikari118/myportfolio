@@ -9,6 +9,13 @@ function Experience(props) {
     const mode = useSelector((state) => state.theme?.theme);
     const experienceItems = [
         {
+            id: 2,
+            date: 'Feb 2023 - Present',
+            title: "Associate Software Engineer",
+            current: true,
+            desc: "As a key contributor to the Hamro Pay project, I spearheaded the expansion of the Hamro Pay wallet, leveraging Svelte, gRPC, and TypeScript. This resulted in a rapid acquisition of 100,000 users within the first month. I enhanced user engagement by integrating new services like flight and bus ticketing, bluebook renewal, and traffic fine payment. Additionally, I developed and optimized the Hamro Pay Admin frontend using React JS, gRPC, TypeScript, Ant Design, and Tailwind CSS, streamlining KYC verification and ledger management. I engineered and maintained over 15 highly reusable components to ensure a scalable codebase. Moreover, I played a key role in successfully onboarding major merchants like Bhat Bhateni supermarket and Himalayan Java Coffee to the Hamro Pay Merchant platform, incorporating crucial features such as bank offload, user-to-user transfer, bulk transfer, and QR config. Lastly, I designed a static website for Hamro Pay using SvelteKit, facilitating enhanced marketing initiatives and showcasing merchant offers."
+        },
+        {
             id: 1,
             date: 'Nov 2022 - Feb 2023',
             title: "Software Engineering Intern",
@@ -16,13 +23,6 @@ function Experience(props) {
             desc: "\n" +
                 "I collaborated with the frontend team to refine the Hamro Pay wallet's interface, enhancing user experience. By implementing utility payment services such as Internet, Electricity, TV, Mobile recharge, and Insurance, I streamlined payments and increased user engagement. Additionally, I integrated cash flow visualization using Apex Charts for improved financial management. My expertise in Svelte, React, gRPC, Ant Design, and Apex Charts advanced the Hamro Pay wallet technologically, introducing efficient and visually appealing features."
         },
-        {
-            id: 2,
-            date: 'Feb 2023 - Present',
-            title: "Associate Software Engineer",
-            current: true,
-            desc: "As a key contributor to the Hamro Pay project, I spearheaded the expansion of the Hamro Pay wallet, leveraging Svelte, gRPC, and TypeScript. This resulted in a rapid acquisition of 100,000 users within the first month. I enhanced user engagement by integrating new services like flight and bus ticketing, bluebook renewal, and traffic fine payment. Additionally, I developed and optimized the Hamro Pay Admin frontend using React JS, gRPC, TypeScript, Ant Design, and Tailwind CSS, streamlining KYC verification and ledger management. I engineered and maintained over 15 highly reusable components to ensure a scalable codebase. Moreover, I played a key role in successfully onboarding major merchants like Bhat Bhateni supermarket and Himalayan Java Coffee to the Hamro Pay Merchant platform, incorporating crucial features such as bank offload, user-to-user transfer, bulk transfer, and QR config. Lastly, I designed a static website for Hamro Pay using SvelteKit, facilitating enhanced marketing initiatives and showcasing merchant offers."
-        }
     ]
     return (
         <div id='experience'>
@@ -47,7 +47,7 @@ function Experience(props) {
                                 <p className='font-semibold'>{item.title}</p>
                                 {item?.current && (
                                     <span
-                                        className="animate-pulse text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-blue-900">Present
+                                        className="animate-pulse text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-blue-900">Current
                                 </span>
                                 )}
                             </div>
