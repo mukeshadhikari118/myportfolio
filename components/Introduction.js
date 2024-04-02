@@ -24,7 +24,7 @@ function Introduction() {
         mode
           ? "from-gray-900 text-white to-black"
           : "from-gray-100 text-gray-800 to-gray-200"
-      }  h-[550px] md:h-[802px]  flex flex-col text-center justify-center items-center space-y-10 relative transition-all duration-300`}
+      }  h-screen  flex flex-col text-center justify-center items-center space-y-10 relative transition-all duration-300`}
     >
       <h1 className="font-extrabold selection:bg-yellow-400 text-3xl md:text-6xl  uppercase tracking-widest">
        {text} <Cursor />

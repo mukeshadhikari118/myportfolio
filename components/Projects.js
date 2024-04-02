@@ -19,7 +19,7 @@ function Projects() {
         title="projects"
         description="Here you will find some of the personal projects that I created with each project containing all of the tech stacks used"
       />
-      <section className="flex items-center overflow-scroll snap-x snap-mandatory relative scrollbar-hide ">
+      <section className="flex items-start overflow-scroll snap-x snap-mandatory relative scrollbar-hide ">
         {projects.map((project,index) => (
           <ProjectCard
             key={project.id}
