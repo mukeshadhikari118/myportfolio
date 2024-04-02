@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
 
-const dbConnect = async() => {
+const dbConnect = () => {
   if (mongoose.connections[0].readyState) {
     return;
   } else {
-    await mongoose
+    mongoose.set("strictQuery", false);
+     mongoose
       .connect(process.env.NEXT_PUBLIC_MONGO_URL)
       .then(console.log("MongoDB connected"))
       .catch((err) => console.log(err));
