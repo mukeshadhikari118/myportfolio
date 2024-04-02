@@ -35,10 +35,10 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
         </div>
 
         <section className="flex items-center md:items-start flex-col z-40 space-y-5 md:space-y-10 md:w-[40%]">
-          <h1 className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400"><span className="text-base text-gray-400 no-underline">{index+1} of {length}. </span>{title}</h1>
+          <h1 className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400"><span className={`text-base ${mode ? "text-gray-300" : "text-gray-500"} text-gray-400 no-underline`}>{index+1} of {length}. </span>{title}</h1>
           <p
-              className={`text-sm text-gray-500 ${
-                  mode ? "text-gray-200" : "text-gray-500"
+              className={`text-sm ${
+                  mode ? "text-gray-100" : "text-gray-500"
               } tracking-wide selection:bg-yellow-400 md:w-[85%] md:text-base`}
           >
             {desc}

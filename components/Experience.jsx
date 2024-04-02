@@ -7,58 +7,62 @@ import {useSelector} from "react-redux";
 
 function Experience(props) {
     const mode = useSelector((state) => state.theme?.theme);
+    const experienceItems = [
+        {
+            id: 1,
+            date: 'Nov 2022 - Feb 2023',
+            title: "Software Engineering Intern",
+            current: false,
+            desc: "\n" +
+                "I collaborated with the frontend team to refine the Hamro Pay wallet's interface, enhancing user experience. By implementing utility payment services such as Internet, Electricity, TV, Mobile recharge, and Insurance, I streamlined payments and increased user engagement. Additionally, I integrated cash flow visualization using Apex Charts for improved financial management. My expertise in Svelte, React, gRPC, Ant Design, and Apex Charts advanced the Hamro Pay wallet technologically, introducing efficient and visually appealing features."
+        },
+        {
+            id: 2,
+            date: 'Feb 2023 - Present',
+            title: "Associate Software Engineer",
+            current: true,
+            desc: "As a key contributor to the Hamro Pay project, I spearheaded the expansion of the Hamro Pay wallet, leveraging Svelte, gRPC, and TypeScript. This resulted in a rapid acquisition of 100,000 users within the first month. I enhanced user engagement by integrating new services like flight and bus ticketing, bluebook renewal, and traffic fine payment. Additionally, I developed and optimized the Hamro Pay Admin frontend using React JS, gRPC, TypeScript, Ant Design, and Tailwind CSS, streamlining KYC verification and ledger management. I engineered and maintained over 15 highly reusable components to ensure a scalable codebase. Moreover, I played a key role in successfully onboarding major merchants like Bhat Bhateni supermarket and Himalayan Java Coffee to the Hamro Pay Merchant platform, incorporating crucial features such as bank offload, user-to-user transfer, bulk transfer, and QR config. Lastly, I designed a static website for Hamro Pay using SvelteKit, facilitating enhanced marketing initiatives and showcasing merchant offers."
+        }
+    ]
     return (
         <div id='experience'>
             <PageIntro
                 title="experience"
                 description="This section highlights my professional work history, including previous job positions or internship works that I have undertaken"
             />
-            <VerticalTimeline>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="Nov 2022 - Feb 2023"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
-                    </svg>
-                    }
-                >
-                   <div className={`${mode ? "bg-gray-800":"bg-white"} text-white p-4`}>
-                       <h3 className={`${mode ? "text-white":"text-black"} vertical-timeline-element-title font-bold`}>Software Engineering Intern</h3>
-                       <p className={`${mode ? "text-white":"text-black"} font-light`}>Frontend Developer</p>
-                       <h4 className="vertical-timeline-element-subtitle text-red-500 font-bold">Hamro Patro Inc.</h4>
-                       <p className={` ${mode ? "text-white":"text-gray-900"} text-sm`}>
-                           <span className='font-bold uppercase text-base mr-3'> Tech stack : </span>  Svelte, Tailwind CSS, TypeScript, gRPC
-                       </p>
-                       <p className={`${mode? "text-white":"text-gray-500"} text-sm`}>During this 3 months I was involved with the frontend team to make smooth user interface in Hamro Pay, a new payment wallet system in Nepal. I gained hands-on experience in svelte, GRPC Web and Typescript. </p>
-                   </div>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="Feb 2023 - Current"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
-                    </svg>
-                    }
-                >
-                    <div className={`${mode ? "bg-gray-800":"bg-white"} text-white p-4`}>
-                        <h3 className={`${mode ? "text-white":"text-black"} vertical-timeline-element-title font-bold`}>Associate Software Engineer</h3>
-                        <p className={`${mode ? "text-white":"text-black"} font-light`}>Frontend Developer</p>
-                        <h4 className="vertical-timeline-element-subtitle text-red-500 font-bold">Hamro Patro Inc.</h4>
-                        <p className={` ${mode ? "text-white":"text-gray-900"} text-sm`}>
-                            <span className='font-bold uppercase text-base mr-3'>Tech stack : </span> Svelte, Tailwind CSS, TypeScript, gRPC, React.js, Ant Design, Apex charts
-                        </p>
-                        <p  className= {`${mode? "text-white":"text-gray-500"} text-sm`}>I enhanced and diversified Hamro Pay&apos;s wallet features, integrating utility and bank services, and overseeing the Hamro Pay Admin frontend. I streamlined KYC verification, developed key functionalities for Hamro Pay Merchant, and maintained a static website for marketing initiatives. Collaborating with the fintech team, I optimized code, created reusable components, and mentored interns to help them excel in their roles.
+            <div className=' max-w-5xl mx-auto px-7 pb-5 selection:bg-yellow-400'>
 
-                        </p>
-                    </div>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    icon={<StarIcon />}
-                />
-            </VerticalTimeline>
+                <ol className="relative border-s border-gray-200 dark:border-gray-700">
+                    {experienceItems.map((item)=>(
+                        <li key={item?.id} className="mb-10 ms-6">
+        <span
+            className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true"
+                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+                            <div className='flex items-center space-x-3'>
+                                <p className='font-semibold'>{item.title}</p>
+                                {item?.current && (
+                                    <span
+                                        className="animate-pulse text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-blue-900">Present
+                                </span>
+                                )}
+                            </div>
+
+                            <time
+                                className={`block mb-2 text-sm font-normal leading-none italic ${mode? "text-gray-100": "text-gray-400"} pt-3`}>{item?.date}
+                            </time>
+                            <p className={`${mode? "text-gray-200": "text-gray-500"} mb-4`}>
+                                {item?.desc}</p>
+                        </li>
+                    ))}
+                </ol>
+
+
+            </div>
         </div>
     );
 }
