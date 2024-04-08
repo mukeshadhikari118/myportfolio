@@ -17,6 +17,15 @@ a {
   box-sizing: border-box;
 }
 
+#home,
+#about,
+#projects,
+#experience
+ {
+  /* Adjust the position where the browser scrolls to */
+  scroll-margin-top: 100px; /* Adjust as needed */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
