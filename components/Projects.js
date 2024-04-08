@@ -12,7 +12,6 @@ function Projects() {
     };
     getProjects();
   }, []);
-
   return (
     <div id="projects">
       <PageIntro
@@ -34,9 +33,9 @@ function Projects() {
         ))}
 
 
-     
+
       </section>
-      
+
     </div>
   );
 }

@@ -34,7 +34,7 @@ function Navbar() {
               alt=""
               priority
               className="rounded-full cursor-pointer"
-              src={"/pp2.png"}
+              src={"/pp2.webp"}
               height="45"
               width="45"
             />
