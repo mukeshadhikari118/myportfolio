@@ -22,9 +22,9 @@ function About() {
         />
         <main className="h-auto md:max-w-6xl mx-auto md:flex   md:space-x-10 py-4  px-5">
           <section className="md:w-1/2  md:p-2">
-            <h1 className="font-bold text-xl mb-6 tracking-wide selection:bg-yellow-400 selection:text-black">
+            <h3 className="font-bold text-xl mb-6 tracking-wide selection:bg-yellow-400 selection:text-black">
               Get to know me!
-            </h1>
+            </h3>
             <div
                 className={` ${
                     mode ? "text-white" : "text-gray-600"
@@ -58,9 +58,9 @@ function About() {
           </section>
 
           <section className="md:w-1/2  px-2 py-2">
-            <h1 className="font-bold text-xl selection:bg-yellow-400 mt-10 md:mt-0 mb-6  tracking-wide">
+            <p className="font-bold text-xl selection:bg-yellow-400 mt-10 md:mt-0 mb-6  tracking-wide">
               My Skills <span className="text-sm font-light pb-1">(hover over to see proficiency)</span>
-            </h1>
+            </p>
             <div className="text-sm  font-semibold grid grid-cols-3 gap-x-8 gap-y-4 md:gap-y-7 md:gap-x-7 md:grid-cols-4">
               {skills.map((skill) => (
                   <div
@@ -69,7 +69,7 @@ function About() {
                           mode ? "bg-gray-800 text-white " : "bg-gray-200  text-gray-700"
                       }  h-14  w-28 text-center rounded-md text-sm flex items-center justify-center  selection:bg-yellow-400 cursor-pointer relative group transition-all duration-300 ease-in-out   `}
                   >
-                    <h1 className="group-hover:opacity-0">{skill.title}</h1>
+                    <p className="group-hover:opacity-0">{skill.title}</p>
 
                     <div className="absolute top-[17px]">
                       <p className="text-yellow-500 opacity-0 group-hover:opacity-100 font-bold">{skill.percent}%</p>

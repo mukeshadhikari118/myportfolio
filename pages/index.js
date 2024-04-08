@@ -17,8 +17,9 @@ export default function Home() {
       <Head>
         <title>Sankalpa Neupane</title>
           <meta name='description'
-                content='Discover the creative journey of Sankalpa Neupane through a captivating portfolio. From imaginative web designs to intricate software projects, delve into the fusion of artistry and technology. With a commitment to excellence and a passion for innovation, explore how Sankalpa Neupane brings ideas to life, leaving a lasting impact in the world of design and technology.'>
+                content='Explore the creative portfolio of Sankalpa Neupane, featuring imaginative web designs and innovative software projects that blend artistry and technology.'>
           </meta>
+          <meta property="og:title" content="Sankalpa Neupane Portfolio" />
           <meta property="og:type" content='website' />
           <meta property="og:description" content='Discover the creative journey of Sankalpa Neupane through a captivating portfolio. From imaginative web designs to intricate software projects, delve into the fusion of artistry and technology. With a commitment to excellence and a passion for innovation, explore how Sankalpa Neupane brings ideas to life, leaving a lasting impact in the world of design and technology.' />
           <meta property="og:url" content='https://www.sankalpaneupane.com.np'/>

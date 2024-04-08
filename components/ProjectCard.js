@@ -34,7 +34,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
         </div>
 
         <section className="flex items-center md:items-start flex-col z-40 space-y-5 md:space-y-10 md:w-[40%]">
-          <h1 className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400"><span className={`text-base ${mode ? "text-gray-300" : "text-gray-500"} text-gray-400 no-underline`}>{index+1} of {length}. </span>{title}</h1>
+          <p className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400"><span className={`text-base ${mode ? "text-gray-300" : "text-gray-500"} text-gray-400 no-underline`}>{index+1} of {length}. </span>{title}</p>
           <p
               className={`text-sm ${
                   mode ? "text-gray-100" : "text-gray-500"
@@ -44,7 +44,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
           </p>
 
           <section className="w-full">
-            <h1 className="font-bold text-xl mb-3  tracking-wide selection:bg-yellow-400">Tech Stack</h1>
+            <p className="font-bold text-xl mb-3  tracking-wide selection:bg-yellow-400">Tech Stack</p>
             <div className="text-sm md:w-[90%] w-full font-semibold grid md:grid-cols-4 grid-cols-3 md:gap-6 gap-4">
               {tools.map((tool) => (
                   <div

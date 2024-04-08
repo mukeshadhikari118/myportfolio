@@ -17,7 +17,7 @@ function Introduction() {
     
   })
   return (
-    <main
+    <div
       id="home"
       className={`bg-gradient-to-b ${
         mode
@@ -25,9 +25,9 @@ function Introduction() {
           : "from-gray-100 text-gray-800 to-gray-200"
       }  h-screen  flex flex-col text-center justify-center items-center space-y-10 relative transition-all duration-300`}
     >
-      <h1 className="font-extrabold selection:bg-yellow-400 text-3xl md:text-6xl  uppercase tracking-widest">
+      <h2 className="font-extrabold selection:bg-yellow-400 text-3xl md:text-6xl  uppercase tracking-widest">
        {text} <Cursor />
-      </h1>
+      </h2>
       <p className="font-light text-sm selection:bg-yellow-400 tracking-wider md:font-normal md:text-lg  px-4 md:w-1/2">
         {" "}
         I just love to make beautiful web applications using modern tools and technologies
@@ -79,7 +79,7 @@ function Introduction() {
           <FaInstagram className="h-8 w-8 cursor-pointer hover:text-[#C13584]" />
         </a>
       </section>
-    </main>
+    </div>
   );
 }
 

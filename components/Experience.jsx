@@ -41,7 +41,7 @@ function Experience(props) {
             </svg>
         </span>
                             <div className='flex items-center space-x-3'>
-                                <h3 className='font-semibold'>{item.title}</h3>
+                                <h2 className='font-semibold'>{item.title}</h2>
                                 {item?.current && (
                                     <span
                                         className="animate-pulse text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-blue-900">Current

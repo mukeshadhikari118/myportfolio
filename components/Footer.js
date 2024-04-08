@@ -12,9 +12,9 @@ function Footer() {
     >
       <main className="space-y-10 md:flex flex-row-reverse  items-center justify-between md:px-16 ">
         <div className="space-y-4">
-          <h1 className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
+          <p className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
             social
-          </h1>
+          </p>
           <div className="flex items-center space-x-3 ">
             <a
               target="_blank"
@@ -56,9 +56,9 @@ function Footer() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
+          <p className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
             Sankalpa neupane
-          </h1>
+          </p>
           <p className="text-[13px]  md:w-[65%] selection:bg-yellow-400">
           A software engineer with experience in MERN stack, React, Next JS, Ruby, Python and many more
           </p>
