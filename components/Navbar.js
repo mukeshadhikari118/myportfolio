@@ -39,7 +39,7 @@ function Navbar() {
               width="45"
             />
             <h1 className="font-extrabold  cursor-pointer hover:text-yellow-400 transition-all duration-300  tracking-wider md:text-base text-xs font-mono">
-              This is Sankalpa Neupane
+              Sankalpa Neupane
             </h1>
           </div>
         </a>
