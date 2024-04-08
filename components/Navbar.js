@@ -38,9 +38,9 @@ function Navbar() {
               height="45"
               width="45"
             />
-            <p className="font-extrabold  tracking-widest cursor-pointer hover:text-yellow-400 transition-all duration-300  font-mono">
+            <h1 className="font-extrabold  tracking-widest cursor-pointer hover:text-yellow-400 transition-all duration-300  font-mono">
               Sankalpa Neupane
-            </p>
+            </h1>
           </div>
         </Link2>
 

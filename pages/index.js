@@ -15,6 +15,7 @@ export default function Home() {
 
   return (
     <div className={`${mode ? "bg-gray-900 text-white" : "bg-white"} snap-y`}>
+        <meta name='Sankalpa Neupane Portfolio' content='Discover the creative journey of Sankalpa Neupane through a captivating portfolio. From imaginative web designs to intricate software projects, delve into the fusion of artistry and technology. With a commitment to excellence and a passion for innovation, explore how Sankalpa Neupane brings ideas to life, leaving a lasting impact in the world of design and technology.'></meta>
       <Head>
         <title>Sankalpa Neupane</title>
       </Head>
