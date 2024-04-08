@@ -1,5 +1,4 @@
 import React from 'react';
-import 'react-vertical-timeline-component/style.min.css';
 import PageIntro from "./PageIntro";
 import {useSelector} from "react-redux";
 
