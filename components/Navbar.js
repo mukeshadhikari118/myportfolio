@@ -54,7 +54,7 @@ function Navbar() {
               href='#about'
             className="cursor-pointer hover:text-yellow-400 transition-all duration-300"
           >
-           <span>Home</span>
+           <span>About</span>
           </a>
           <a
               href='#projects'
