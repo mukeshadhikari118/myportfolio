@@ -27,7 +27,7 @@ export default function Home() {
           <meta property="og:image" content='/pp2.webp' />
           <link rel="canonical" href='https://www.sankalpaneupane.com.np' />
           <link rel="icon" href="/favicon.ico" />
-          <link rel="apple-touch-icon" href="path/to/your-icon.png"/>
+          <link rel="apple-touch-icon" href="/favicon.ico"/>
           <meta name="theme-color" content="#ffffff"/>
       </Head>
       <Navbar />
