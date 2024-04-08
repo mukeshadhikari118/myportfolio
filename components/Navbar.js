@@ -30,6 +30,7 @@ function Navbar() {
             className="flex items-center uppercase space-x-2 "
           >
             <Image
+                title='profileImage'
               alt=""
               priority
               className="rounded-full cursor-pointer"

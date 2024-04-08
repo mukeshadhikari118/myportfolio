@@ -25,6 +25,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
                 <p className='text-xs text-gray-400'>Image Loading...</p>
             </div>
           <Image
+              title={title}
               loading="lazy"
               alt=""
               src={img}
