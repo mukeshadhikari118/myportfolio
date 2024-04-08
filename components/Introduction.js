@@ -5,7 +5,6 @@ import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { useSelector } from "react-redux";
-import { Link as Link2 } from "react-scroll";
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 
 function Introduction() {
@@ -33,11 +32,11 @@ function Introduction() {
         {" "}
         I just love to make beautiful web applications using modern tools and technologies
       </p>
-      <Link2 to="projects" smooth={true} offset={-120}>
+      <a href="#projects">
         <button className="bg-yellow-400 select-none hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-16 transition-all duration-500 rounded-lg">
           projects
         </button>
-      </Link2>
+      </a>
       <section
         className={`absolute left-0 ${
           mode ? "bg-black" : "bg-white "

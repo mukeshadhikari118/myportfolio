@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
-import {motion} from 'framer-motion'
 
 function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
   const mode = useSelector((state) => state.theme?.theme);
@@ -19,7 +18,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
   };
 
   return (
-      <main className="  snap-center  flex flex-col md:flex-row items-center md:space-y-0 z-40 space-y-8 w-[87%] shrink-0 relative px-6 md:px-0  ">
+      <div className="snap-center  flex flex-col md:flex-row items-center md:space-y-0 z-40 space-y-8 w-[87%] shrink-0 relative px-6 md:px-0  ">
         <Toaster position="bottom-left" />
         <div  className="relative h-60 md:h-[500px] w-full md:w-[50%] mx-auto z-40">
             <div className='absolute flex items-center justify-center inset-0 h-full w-full'>
@@ -59,15 +58,16 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
               ))}
             </div>
           </section>
-          <button
-              onClick={() => handleClick(livelink)}
-              className="bg-yellow-400 select-none text-sm   hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-10 transition-all duration-500 rounded-lg"
-          >
-            live link
-          </button>
+          <div className='w-full'>
+              <button
+                  onClick={() => handleClick(livelink)}
+                  className="bg-yellow-400 select-none text-sm   hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-10 transition-all duration-500 rounded-lg"
+              >
+                  live link
+              </button>
+          </div>
         </section>
-        {/* <div className={`h-64 pr-20 w-full bg-pink-400/10 absolute  z-10 ${index%2===0?"-skew-y-12":"skew-y-12"}  overflow-hidden`}></div> */}
-      </main>
+      </div>
   );
 }
 

@@ -60,7 +60,7 @@ function Footer() {
             Sankalpa neupane
           </h1>
           <p className="text-[13px]  md:w-[65%] selection:bg-yellow-400">
-          A software engineer with experience in MERN stack, ruby, python and many more
+          A software engineer with experience in MERN stack, React, Next JS, Ruby, Python and many more
           </p>
           <a href='/sankalpa-resume.pdf' download><button className="bg-yellow-400  select-none text-[10px] hover:-translate-y-1 shadow-xl tracking-wider uppercase font-extrabold text-gray-800 py-3 mt-5 px-10 transition-all duration-500 rounded-lg">
          Download cv

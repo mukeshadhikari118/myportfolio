@@ -1,7 +1,5 @@
 import React from 'react';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {StarIcon} from "@heroicons/react/solid";
 import PageIntro from "./PageIntro";
 import {useSelector} from "react-redux";
 
@@ -44,7 +42,7 @@ function Experience(props) {
             </svg>
         </span>
                             <div className='flex items-center space-x-3'>
-                                <p className='font-semibold'>{item.title}</p>
+                                <h3 className='font-semibold'>{item.title}</h3>
                                 {item?.current && (
                                     <span
                                         className="animate-pulse text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-blue-900">Current

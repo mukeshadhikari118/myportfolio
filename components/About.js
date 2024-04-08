@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import PageIntro from "./PageIntro";
-import { Link as Link2 } from "react-scroll";
 import { useSelector } from "react-redux";
 
 function About() {
@@ -35,7 +34,7 @@ function About() {
                 I&apos;m a <span className="font-bold">Software Engineer</span>{" "}
                 focused on building beautiful web applications that leads to the
                 success of the overall product. Check out some of my work in the{" "}
-                <Link2 to="projects" smooth={true}  offset={-120}  className="font-bold cursor-pointer hover:text-yellow-400">Projects</Link2> section.
+                <a to="projects" href='#projects' className="font-bold cursor-pointer hover:text-yellow-400">Projects</a> section.
               </p>
               <p className="selection:bg-yellow-400 ">
                 I also like helping others with the stuff that I have
@@ -51,12 +50,11 @@ function About() {
                 me.
               </p>
             </div>
-            <Link2 to="contact" smooth={true} offset={-20}>
-              {" "}
+            <a href='#contact'>
               <button className=" select-none bg-yellow-400 hover:-translate-y-1 shadow-xl tracking-wider text-sm uppercase font-bold text-gray-800 py-3 px-12 transition-all duration-500 rounded-lg my-10">
                 contact
               </button>
-            </Link2>
+            </a>
           </section>
 
           <section className="md:w-1/2  px-2 py-2">
@@ -71,7 +69,7 @@ function About() {
                           mode ? "bg-gray-800 text-white " : "bg-gray-200  text-gray-700"
                       }  h-14  w-28 text-center rounded-md text-sm flex items-center justify-center  selection:bg-yellow-400 cursor-pointer relative group transition-all duration-300 ease-in-out   `}
                   >
-                    <p className="group-hover:opacity-0">{skill.title}</p>
+                    <h1 className="group-hover:opacity-0">{skill.title}</h1>
 
                     <div className="absolute top-[17px]">
                       <p className="text-yellow-500 opacity-0 group-hover:opacity-100 font-bold">{skill.percent}%</p>

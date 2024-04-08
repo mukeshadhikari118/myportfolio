@@ -73,6 +73,8 @@ function Contact() {
             </label>
             <input
                 value={name}
+                name='name'
+                id='name'
                 onChange={e=>setName(e.target.value)}
                 className={` ${
                     mode ? "bg-gray-800 border-none" : "bg-gray-100"
@@ -91,6 +93,8 @@ function Contact() {
               Email
             </label>
             <input
+                name='email'
+                id='email'
                 value={email}
                 onChange={e=>setEmail(e.target.value)}
                 className={` ${
