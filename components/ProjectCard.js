@@ -26,7 +26,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
             </div>
           <Image
               title={title}
-              loading="lazy"
+              loading='lazy'
               alt=""
               src={img}
               className="object-contain select-none rounded-md"

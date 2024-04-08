@@ -31,8 +31,8 @@ function Navbar() {
           >
             <Image
                 title='profileImage'
+                loading='lazy'
               alt=""
-              priority
               className="rounded-full cursor-pointer"
               src={"/pp2.webp"}
               height="45"
