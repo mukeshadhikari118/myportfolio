@@ -60,25 +60,5 @@ export default function handler(req, res) {
         title: "Ruby",
         percent: 50
       },
-    {
-      id: 12,
-      title: "gRPC",
-      percent: 60
-    },
-    {
-      id: 13,
-      title: "Ant Design",
-      percent: 80
-    },
-    {
-      id: 14,
-      title: "SASS",
-      percent: 60
-    },
-    {
-      id: 15,
-      title: "TypeScript",
-      percent: 70
-    },
   ]);
 }

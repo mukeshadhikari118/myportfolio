@@ -61,7 +61,7 @@ function About() {
             <p className="font-bold text-xl selection:bg-yellow-400 mt-10 md:mt-0 mb-6  tracking-wide">
               My Skills <span className="text-sm font-light pb-1">(hover over to see proficiency)</span>
             </p>
-            <div className="text-sm  font-semibold grid grid-cols-3 gap-x-8 gap-y-4 md:gap-y-7 md:gap-x-7 md:grid-cols-4">
+            <div className="text-sm  font-semibold grid grid-cols-3 gap-x-4 gap-y-1 md:gap-y-7 md:gap-x-7 md:grid-cols-4">
               {skills.map((skill) => (
                   <div
                       key={skill.id}
