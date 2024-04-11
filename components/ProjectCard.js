@@ -18,7 +18,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
   };
 
   return (
-      <div className="snap-center  flex flex-col md:flex-row items-center md:space-y-0 z-40 space-y-8 w-[87%] shrink-0 relative px-6 md:px-0 shadow-md pb-5">
+      <div className={`snap-center  flex flex-col md:flex-row items-center md:space-y-0 z-40 space-y-8 w-[90%] shrink-0 border rounded-md ${mode ? "bg-slate-800 border-gray-700" : "bg-gray-100 border-gray-300"} relative px-6 md:px-0 pb-5 h-[800px] md:h-auto`}>
         <Toaster position="bottom-left" />
         <div  className="relative h-60 md:h-[500px] w-full md:w-[50%] mx-auto z-40">
             <div className='absolute flex items-center justify-center inset-0 h-full w-full'>
@@ -53,7 +53,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
                   <div
                       key={tool}
                       className={` ${
-                          mode ? "bg-gray-800 text-white" : "bg-gray-200 text-gray-700"
+                          mode ? "bg-gray-700 text-white" : "bg-gray-200 text-gray-700"
                       } flex items-center justify-center md:px-3 px-8 py-2 rounded-md selection:bg-yellow-400 whitespace-nowrap`}
                   >
                     {tool}
@@ -64,7 +64,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
           <div className='w-full'>
               <button
                   onClick={() => handleClick(livelink)}
-                  className="bg-yellow-400 select-none text-xs hover:-translate-y-1 shadow-xl shadow-yellow-400/20 tracking-wider uppercase font-bold text-gray-800 py-3 px-10 transition-all duration-500 rounded-lg"
+                  className="bg-yellow-400 select-none text-xs hover:-translate-y-1 tracking-wider uppercase font-bold text-gray-800 py-3 px-10 transition-all duration-500 rounded-lg"
               >
                   live link
               </button>

@@ -26,7 +26,7 @@ export default function handler(req, res) {
             id:3,
             title:"Weather App",
             img:'/deinzeit.webp',
-            desc:"This web app which shows the time and current weather details of a particular city.",
+            desc:"This Weather Tracker web application provides real-time information about the current time and weather details of any chosen city. With a sleek and intuitive interface, users can easily access essential weather data for their desired location, helping them plan their activities effectively.",
             tools: ["Next JS", "Tailwind CSS"],
             livelink: "https://dein-zeit.vercel.app/"
         },

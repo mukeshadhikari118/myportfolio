@@ -20,7 +20,7 @@ function Navbar() {
       <main
         className={`h-[75px] sticky top-0 z-50  ${
           mobileView && "border-b"
-        } select-none  transition-all duration-300 ${
+        } select-none  transition-all ${
           mode ? "bg-black text-white" : "bg-white text-gray-700"
         } shadow-md flex items-center justify-between px-4 md:px-6`}
       >
