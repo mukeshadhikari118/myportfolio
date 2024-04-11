@@ -18,7 +18,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
   };
 
   return (
-      <div className="snap-center  flex flex-col md:flex-row items-center md:space-y-0 z-40 space-y-8 w-[87%] shrink-0 relative px-6 md:px-0  ">
+      <div className="snap-center  flex flex-col md:flex-row items-center md:space-y-0 z-40 space-y-8 w-[87%] shrink-0 relative px-6 md:px-0 shadow-md pb-5">
         <Toaster position="bottom-left" />
         <div  className="relative h-60 md:h-[500px] w-full md:w-[50%] mx-auto z-40">
             <div className='absolute flex items-center justify-center inset-0 h-full w-full'>
@@ -34,19 +34,21 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
           />
         </div>
 
-        <section className="flex items-center md:items-start flex-col z-40 space-y-5 md:space-y-10 md:w-[40%]">
-          <p className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400"><span className={`text-base ${mode ? "text-gray-300" : "text-gray-500"} text-gray-400 no-underline`}>{index+1} of {length}. </span>{title}</p>
+        <section className="flex items-center md:items-start flex-col z-40 space-y-5 md:w-[40%]">
+         <div className='w-full '>
+             <p className="font-extrabold text-xl md:text-4xl selection:bg-yellow-400 decoration-yellow-400 text-start"><span className={`text-base ${mode ? "text-gray-300" : "text-gray-500"} text-gray-400 no-underline`}>{index+1} of {length}. </span>{title}</p>
+         </div>
           <p
               className={`text-sm ${
                   mode ? "text-gray-100" : "text-gray-500"
-              } tracking-wide selection:bg-yellow-400 md:w-[85%] md:text-base`}
+              } tracking-wide selection:bg-yellow-400 md:w-[85%]`}
           >
             {desc}
           </p>
 
           <section className="w-full">
-            <p className="font-bold text-xl mb-3  tracking-wide selection:bg-yellow-400">Tech Stack</p>
-            <div className="text-sm md:w-[90%] w-full font-semibold grid md:grid-cols-4 grid-cols-3 md:gap-6 gap-4">
+            <p className="font-bold mb-3  tracking-wide selection:bg-yellow-400">Tech Stack</p>
+            <div className="text-xs md:text-sm md:w-[90%] w-full font-semibold grid md:grid-cols-4 grid-cols-3 md:gap-6 gap-4">
               {tools.map((tool) => (
                   <div
                       key={tool}
@@ -62,7 +64,7 @@ function ProjectCard({ title, img, desc, tools, livelink, index, length }) {
           <div className='w-full'>
               <button
                   onClick={() => handleClick(livelink)}
-                  className="bg-yellow-400 select-none text-sm   hover:-translate-y-1 shadow-xl tracking-wider uppercase font-bold text-gray-800 py-3 px-10 transition-all duration-500 rounded-lg"
+                  className="bg-yellow-400 select-none text-xs hover:-translate-y-1 shadow-xl shadow-yellow-400/20 tracking-wider uppercase font-bold text-gray-800 py-3 px-10 transition-all duration-500 rounded-lg"
               >
                   live link
               </button>

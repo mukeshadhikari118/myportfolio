@@ -10,15 +10,26 @@ function Experience(props) {
             date: 'Feb 2023 - Present',
             title: "Associate Software Engineer",
             current: true,
-            desc: "As a key contributor to the Hamro Pay project, I spearheaded the expansion of the Hamro Pay wallet, leveraging Svelte, gRPC, and TypeScript. This resulted in a rapid acquisition of 100,000 users within the first month. I enhanced user engagement by integrating new services like flight and bus ticketing, bluebook renewal, and traffic fine payment. Additionally, I developed and optimized the Hamro Pay Admin frontend using React JS, gRPC, TypeScript, Ant Design, and Tailwind CSS, streamlining KYC verification and ledger management. I engineered and maintained over 15 highly reusable components to ensure a scalable codebase. Moreover, I played a key role in successfully onboarding major merchants like Bhat Bhateni supermarket and Himalayan Java Coffee to the Hamro Pay Merchant platform, incorporating crucial features such as bank offload, user-to-user transfer, bulk transfer, and QR config. Lastly, I designed a static website for Hamro Pay using SvelteKit, facilitating enhanced marketing initiatives and showcasing merchant offers."
+            points: ["Spearheaded expansion of Hamro Pay wallet, resulting in acquisition of 100,000 users within the first month.",
+                "Enhanced user engagement by integrating new services including flight and bus ticketing, bluebook renewal, and traffic fine payment.",
+                "Developed and optimized Hamro Pay Admin frontend using React JS, streamlining KYC verification and ledger management.",
+                "Engineered and maintained over 15 highly reusable components to ensure a scalable codebase.",
+                "Incorporated crucial features such as bank offload, user-to-user transfer, bulk transfer, and QR config for merchant platform.",
+                "Played a key role in successfully onboarding major merchants like Bhat Bhateni supermarket and Himalayan Java Coffee to the Hamro Pay Merchant platform.",
+                "Designed a static website for Hamro Pay to facilitate enhanced marketing initiatives and showcase merchant offers."
+
+            ]
         },
         {
             id: 1,
             date: 'Nov 2022 - Feb 2023',
             title: "Software Engineering Intern",
             current: false,
-            desc: "\n" +
-                "I collaborated with the frontend team to refine the Hamro Pay wallet's interface, enhancing user experience. By implementing utility payment services such as Internet, Electricity, TV, Mobile recharge, and Insurance, I streamlined payments and increased user engagement. Additionally, I integrated cash flow visualization using Apex Charts for improved financial management. My expertise in Svelte, React, gRPC, Ant Design, and Apex Charts advanced the Hamro Pay wallet technologically, introducing efficient and visually appealing features."
+            points: ["Collaborated with frontend team to refine Hamro Pay wallet's interface, enhancing user experience.",
+                "Implemented utility payment services such as Internet, Electricity, TV, Mobile recharge, and Insurance to streamline payments and increase user engagement.\n",
+                "Integrated cash flow visualization using Apex Charts for improved financial management.",
+                "Introduced efficient and visually appealing features to the wallet."
+            ]
         },
     ]
     return (
@@ -52,8 +63,14 @@ function Experience(props) {
                             <time
                                 className={`block mb-2 text-sm font-normal leading-none italic ${mode? "text-gray-100": "text-gray-400"} pt-3`}>{item?.date}
                             </time>
-                            <p className={`${mode? "text-gray-200": "text-gray-500"} mb-4`}>
-                                {item?.desc}</p>
+                            <ul className='list-disc space-y-2'>
+                                {item?.points.map((point)=>(
+                                    <React.Fragment key={point}>
+                                        <li className={`${mode? "text-gray-200": "text-gray-500 "}`}>
+                                            {point}</li>
+                                    </React.Fragment>
+                                ))}
+                            </ul>
                         </li>
                     ))}
                 </ol>

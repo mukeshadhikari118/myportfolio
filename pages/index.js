@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Sankalpa Neupane</title>
           <meta name='description'
-                content="Discover Sankalpa Neupane's fusion of artistry and tech in web design & software projects, leaving a lasting impact."
+                content="Explore the creative portfolio of Sankalpa Neupane, featuring imaginative web designs and innovative software projects that blend artistry and technology."
                 lang="en">
           </meta>
           <meta property="og:title" content="Sankalpa Neupane Portfolio" />

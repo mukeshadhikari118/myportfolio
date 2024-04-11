@@ -61,13 +61,13 @@ function About() {
             <p className="font-bold text-xl selection:bg-yellow-400 mt-10 md:mt-0 mb-6  tracking-wide">
               My Skills <span className="text-sm font-light pb-1">(hover over to see proficiency)</span>
             </p>
-            <div className="text-sm  font-semibold grid grid-cols-3 gap-x-4 gap-y-1 md:gap-y-7 md:gap-x-7 md:grid-cols-4">
+            <div className="text-sm  font-semibold grid grid-cols-3 gap-x-4 gap-y-4 md:gap-y-7 md:gap-x-7 md:grid-cols-4">
               {skills.map((skill) => (
                   <div
                       key={skill.id}
                       className={` ${
                           mode ? "bg-gray-800 text-white " : "bg-gray-200  text-gray-700"
-                      }  h-14  w-28 text-center rounded-md text-sm flex items-center justify-center  selection:bg-yellow-400 cursor-pointer relative group transition-all duration-300 ease-in-out   `}
+                      }  h-14  w-full text-center rounded-md text-sm flex items-center justify-center  selection:bg-yellow-400 cursor-pointer relative group transition-all duration-300 ease-in-out   `}
                   >
                     <p className="group-hover:opacity-0">{skill.title}</p>
 
