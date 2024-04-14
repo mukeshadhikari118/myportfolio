@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-function PageIntro({ title, description }) {
+function PageIntro({ title, description, link }) {
   const mode = useSelector((state) => state.theme?.theme);
   return (
     <main
@@ -16,7 +16,7 @@ function PageIntro({ title, description }) {
       </h2>
       <div className=" bg-yellow-400 h-1 w-6  rounded-full "></div>
       <p className="text-center selection:bg-yellow-400  md:text-base md:w-1/2 text-sm text-lighter tracking-wide px-2">
-        {description}
+        {description}<span className='underline text-blue-500'>{link}</span>
       </p>
     </main>
   );

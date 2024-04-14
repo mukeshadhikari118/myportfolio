@@ -2,8 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import PageIntro from "./PageIntro";
 import ProjectCard from "./ProjectCard";
-
+import {useRouter} from "next/router";
 function Projects() {
+    const router = useRouter()
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const getProjects = async () => {
@@ -12,12 +13,19 @@ function Projects() {
     };
     getProjects();
   }, []);
+
+  const handleMoreProjects = () => {
+      router.push("https://github.com/sankalpa-sys?tab=repositories")
+    }
   return (
     <div id="projects">
       <PageIntro
         title="projects"
-        description="Here you will find some of the personal projects that I created with each project containing all of the tech stacks used"
+        description="Here are some of my personal projects with their respective tech stack. For a comprehensive list of all projects, visit my GitHub: "
+        link={<a href="https://github.com/sankalpa-sys?tab=repositories">here</a>}
       />
+       <div className='flex item-center justify-center '>
+       </div>
       <section className="flex items-start overflow-scroll snap-x snap-mandatory relative scrollbar-hide space-x-4 px-5 ">
         {projects.map((project,index) => (
           <ProjectCard
@@ -31,9 +39,6 @@ function Projects() {
             length={projects.length}
           />
         ))}
-
-
-
       </section>
 
     </div>

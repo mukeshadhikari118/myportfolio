@@ -10,7 +10,7 @@ function Footer() {
         mode ? "bg-black text-gray-100" : "bg-white text-gray-700"
       } px-4 py-10 space-y-8`}
     >
-      <main className="space-y-10 md:flex flex-row-reverse  items-center justify-between md:px-16 ">
+      <div className="space-y-10 md:flex flex-row-reverse  items-center justify-between md:px-16 ">
         <div className="space-y-4">
           <p className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
             social
@@ -55,7 +55,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="space-y-4">
+        <div className="md:space-y-4 space-y-2">
           <p className="uppercase font-extrabold tracking-[1px] text-lg selection:bg-yellow-400">
             Sankalpa neupane
           </p>
@@ -66,11 +66,11 @@ function Footer() {
          Download cv
         </button></a>
         </div>
-      </main>
+      </div>
       <hr />
       <div>
-        <p className="text-[10px]  selection:bg-yellow-400 text-center pt-3">
-          &copy; Copyright 2022. Made by Sankalpa Neupane
+        <p className="text-[10px]  selection:bg-yellow-400 text-center">
+          &copy; Copyright {new Date().getFullYear()}. Made by Sankalpa Neupane
         </p>
       </div>
     </footer>
