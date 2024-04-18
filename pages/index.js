@@ -22,7 +22,7 @@ export default function Home() {
           <meta property="og:type" content='website' />
           <meta property="og:description" content='Explore the creative portfolio of Sankalpa Neupane, featuring imaginative web designs and innovative software projects that blend artistry and technology.' />
           <meta property="og:url" content='https://www.sankalpaneupane.com.np'/>
-          <meta property="og:image" content='/pp2.webp' />
+          <meta property="og:image" content='https://image.hamropatro.com/nf9ytNMeY9a9g2tY71oSU1QXhZkIgMyP459-4O8tEqc/rs:fit:0:0/g:no/aHR0cHM6Ly9ldmVyZXN0ZGIuc2dwMS5jZG4uZGlnaXRhbG9jZWFuc3BhY2VzLmNvbS9wYXJld2EvaW1hZ2UtcHJveHktY29udmVyc2lvbi82YjgzNDE4Ni1jNzBmLTQ3MGEtYWNiYi05YmVlZjIzMDA1Y2M.webp' />
           <link rel="canonical" href='https://www.sankalpaneupane.com.np' />
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/favicon.ico"/>
